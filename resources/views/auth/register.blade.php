@@ -12,7 +12,7 @@
     </header>
     <main>
         <div>
-            <form action="" method="post">
+            <form action="{{ route('register') }}" method="post">
                 <label for="name">ユーザー名</label>
                 <input type="text" name="name" id="name">
                 <label for="email">メールアドレス</label>
