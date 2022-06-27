@@ -13,6 +13,7 @@
     <main>
         <div>
             <form action="{{ route('register') }}" method="post">
+                @csrf
                 <label for="name">ユーザー名</label>
                 <input type="text" name="name" id="name">
                 <label for="email">メールアドレス</label>
