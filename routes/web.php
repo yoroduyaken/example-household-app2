@@ -22,4 +22,4 @@ Route::get('/home', function () {
     return view('home');
 })->name('home');
 
-Route::get('/register', [RegisterController::class, 'index']);
+Route::get('/register', [RegisterController::class, 'index'])->name('register');
