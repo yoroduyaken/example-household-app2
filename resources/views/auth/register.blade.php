@@ -11,6 +11,13 @@
         <h1>会員登録</h1>
     </header>
     <main>
+        @if ($errors->any())
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+        @endif
         <div>
             <form action="{{ route('register') }}" method="post">
                 @csrf
