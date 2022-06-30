@@ -12,7 +12,8 @@
     </header>
     <main>
         <div>
-            <form action="" method="post">
+            <form action="{{ route('login') }}" method="post">
+                @csrf
                 <label for="email">メールアドレス</label>
                 <input type="email" name="email" id="email">
                 <label for="password">パスワード</label>
